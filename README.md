@@ -7,7 +7,7 @@
 - Learn how to use Github to create a CIT 281 Code Portfolio that
   will be available after the term ends
 
-## 281 Project 4 Learning Outcomes
+## 281 Project 4 Learning Objectives
 
 - Build a To-Do app that uses the Web Storage API
 - The Web Storage API lets browsers store key/value pairs locally, to
