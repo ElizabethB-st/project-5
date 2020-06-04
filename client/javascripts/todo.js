@@ -49,7 +49,7 @@ let controller = function() {
   });
 };
 
-let deleteComment = () => {
+let deleteTodo = () => {
   //delete a comment from db
   let content = $("#deleteOne").val();
   $.ajax({
@@ -62,11 +62,11 @@ let deleteComment = () => {
   window.location.reload();
 };
 
-let getComment = () => {
+let getTodo = () => {
   //clear outDiv
   $("#outDiv").html("");
   let pElem;
-  //retrieve a comment from db
+  //retrieve a todo from db
   let content = $("#getOne").val();
   $.ajax({
     method: "GET",
@@ -93,8 +93,8 @@ $(document).ready(() => {
   btn03 = document.querySelectorAll("button")[3];
   btn03.addEventListener("click", deleteAll);
   btn02 = document.querySelectorAll("button")[2];
-  btn02.addEventListener("click", deleteComment);
+  btn02.addEventListener("click", deleteTodo);
   btn01 = document.querySelectorAll("button")[1];
-  btn01.addEventListener("click", getComment);
+  btn01.addEventListener("click", getTodo);
   controller();
 });
